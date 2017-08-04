@@ -1,0 +1,36 @@
+application: thonking-slash-command
+module: default
+version: unstable
+runtime: python27
+api_version: 1
+threadsafe: true
+
+automatic_scaling:
+  min_idle_instances: 0
+  max_idle_instances: 2
+  min_pending_latency: 2.0s
+  max_pending_latency: 3.0s
+  max_concurrent_requests: 50
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
+- name: ssl
+  version: latest
+
+builtins:
+- appstats: on
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?.*/dev_data/.*$
+- ^(.*/)?\..*$
+- ^(.*/)?.*_test\.py[co]?$
+
+includes:
+- handlers.yaml

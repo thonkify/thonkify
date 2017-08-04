@@ -1,0 +1,8 @@
+../uritemplate/__init__.py
+../uritemplate/__init__.pyc
+.
+dependency_links.txt
+PKG-INFO
+requires.txt
+SOURCES.txt
+top_level.txt
