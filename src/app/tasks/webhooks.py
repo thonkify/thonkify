@@ -15,6 +15,7 @@ class ThonkifyEndpoint(RequestHandler):
         self.response.headers['Content-Type'] = 'application/json'
         data = {
             'response_type': 'in_channel',
+            'link_names': 1,
             'text': translated_text
         }
         self.response.out.write(json_encode(data))
