@@ -9,6 +9,9 @@ class ThonkifyEndpoint(RequestHandler):
         logging.debug(self.request.POST)
         text_to_translate = self.request.POST.get('text', 'ThOnK')
         translated_text = thonkify.thonkify(text_to_translate)
+        if len(translated_text) > 4000:
+            logging.debug("Text too long, reporting characters 3999 - 4001: " + tranlated_text[3999:4001])
+            translated_text = 'I\'m afraid I can\'t do that: @' + self.request.POST.get('user_name')
         self.response.headers['Content-Type'] = 'application/json'
         data = {
             'response_type': 'in_channel',
