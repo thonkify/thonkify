@@ -18,7 +18,7 @@ libraries:
 - name: jinja2
   version: latest
 - name: ssl
-  version: latest
+  version: "2.7.11"
 
 builtins:
 - appstats: on
