@@ -1,3 +1,0 @@
-[console_scripts]
-gen_protorpc = gen_protorpc:main
-

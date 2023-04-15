@@ -1,2 +1,0 @@
-gcloud
-system_tests

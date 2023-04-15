@@ -1,1 +1,0 @@
-dev_appserver.py src --storage_path=dev_data --log_level=debug
