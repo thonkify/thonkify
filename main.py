@@ -18,7 +18,6 @@ def thonkifyEndpoint():
     text_to_translate = request.form.get('text', 'ThOnK')
     translated_text = thonkify.thonkify(text_to_translate)
     if len(translated_text) > 4000:
-        logging.debug("Text too long, reporting characters 3999 - 4001: " + translated_text[3999:4001])
         translated_text = 'I\'m afraid I can\'t do that: <@' + request.form.get('user_id') + '>'
     data = {
         'response_type': 'in_channel',
