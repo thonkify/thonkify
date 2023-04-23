@@ -1,9 +1,8 @@
+---
 name: build-image
-
 on:
   push:
-    branches: [ main ]
-
+    branches: [main]
 jobs:
   docker:
     runs-on: ubuntu-latest
