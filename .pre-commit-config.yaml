@@ -23,7 +23,7 @@ repos:
       - id: add-trailing-comma
         args: [--py36-plus]
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 1.13.0
+    rev: 1.15.0
     hooks:
       - id: yamlfix
   - repo: https://github.com/asottile/pyupgrade
