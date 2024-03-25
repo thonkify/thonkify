@@ -23,20 +23,20 @@ repos:
       - id: add-trailing-comma
         args: [--py36-plus]
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 1.15.0
+    rev: 1.16.0
     hooks:
       - id: yamlfix
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.15.2
     hooks:
       - id: pyupgrade
         args: [--py310-plus]
   - repo: https://github.com/hhatto/autopep8
-    rev: v2.0.4
+    rev: v2.1.0
     hooks:
       - id: autopep8
   - repo: https://github.com/PyCQA/flake8
-    rev: 6.1.0
+    rev: 7.0.0
     hooks:
       - id: flake8
   - repo: https://github.com/hadolint/hadolint
