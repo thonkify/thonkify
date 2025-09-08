@@ -23,7 +23,7 @@ repos:
       - id: add-trailing-comma
         args: [--py36-plus]
   - repo: https://github.com/lyz-code/yamlfix
-    rev: 1.17.0
+    rev: 1.18.0
     hooks:
       - id: yamlfix
   - repo: https://github.com/asottile/pyupgrade
@@ -40,6 +40,6 @@ repos:
     hooks:
       - id: flake8
   - repo: https://github.com/hadolint/hadolint
-    rev: v2.13.1-beta
+    rev: v2.13.1
     hooks:
       - id: hadolint-docker
