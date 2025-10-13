@@ -21,7 +21,6 @@ repos:
     rev: v4.0.0
     hooks:
       - id: add-trailing-comma
-        args: [--py36-plus]
   - repo: https://github.com/lyz-code/yamlfix
     rev: 1.18.0
     hooks:
